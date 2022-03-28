@@ -10,7 +10,13 @@ public class MySync extends AbstractQueuedSynchronizer {
 
     @Override
     protected boolean tryAcquire(int arg) {
-        return super.tryAcquire(arg);
+        if(arg == 1){
+            if(compareAndSetState(0,1)){
+                setExclusiveOwnerThread(Thread.currentThread());
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
