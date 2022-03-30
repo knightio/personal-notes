@@ -21,12 +21,20 @@ public class MySync extends AbstractQueuedSynchronizer {
 
     @Override
     protected boolean tryRelease(int arg) {
-        return super.tryRelease(arg);
+        if(arg == 1){
+            if(getState() == 0) {
+                throw new IllegalMonitorStateException();
+            }
+            setExclusiveOwnerThread(null);
+            setState(0);
+            return true;
+        }
+        return false;
     }
 
     @Override
     protected boolean isHeldExclusively() {
-        return super.isHeldExclusively();
+        return getState() == 1;
     }
 
     protected Condition newCondition() {
