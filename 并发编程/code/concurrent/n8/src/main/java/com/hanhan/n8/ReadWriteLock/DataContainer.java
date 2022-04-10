@@ -22,7 +22,7 @@ public class DataContainer {
         try {
             log.debug("读取。");
             try {
-                sleep(1);
+                sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -39,7 +39,7 @@ public class DataContainer {
         try{
             log.debug("写入。");
             try {
-                sleep(1);
+                sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

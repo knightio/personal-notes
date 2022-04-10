@@ -1,14 +1,9 @@
 package com.hanhan.n8.pool;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.concurrent.TimeUnit;
 
-
 public class PoolTests {
-
-    @Test
-    void pollTest(){
+    public static void main(String[] args) {
         ThreadPool threadPool = new ThreadPool(1,1000, TimeUnit.MILLISECONDS, 1,
                 (queue, task)->{
                     // 1. 死等
