@@ -2,9 +2,7 @@ package com.hanhan.n8.ReadWriteLock;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
 @Slf4j(topic = "c.ReadWriteLockTests")
 public class ReadWriteLockTests {
 
