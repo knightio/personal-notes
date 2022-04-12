@@ -1,4 +1,4 @@
-package com.hanhan.n8.ReadWriteLock;
+package com.hanhan.n8.readwritelock;
 
 import static java.lang.Thread.sleep;
 

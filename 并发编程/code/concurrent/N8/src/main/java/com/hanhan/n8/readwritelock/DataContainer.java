@@ -1,4 +1,4 @@
-package com.hanhan.n8.ReadWriteLock;
+package com.hanhan.n8.readwritelock;
 
 import lombok.extern.slf4j.Slf4j;
 
