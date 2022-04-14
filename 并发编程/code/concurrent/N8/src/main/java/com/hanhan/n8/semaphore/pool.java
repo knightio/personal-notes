@@ -17,14 +17,14 @@ class pool {
     private Semaphore semaphore;
 
     // 4. 构造方法初始化
-    public Pool(int poolSize) {
+    public pool(int poolSize) {
         this.poolSize = poolSize;
         // 让许可数与资源数一致
         this.semaphore = new Semaphore(poolSize);
         this.connections = new Connection[poolSize];
         this.states = new AtomicIntegerArray(new int[poolSize]);
         for (int i = 0; i < poolSize; i++) {
-            connections[i] = new MockConnection("连接" + (i+1));
+//            connections[i] = new MockConnection("连接" + (i+1));
         }
     }
 
