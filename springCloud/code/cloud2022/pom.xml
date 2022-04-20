@@ -7,9 +7,12 @@
   <groupId>com.hanhan</groupId>
   <artifactId>cloud2022</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>cloud-provider-payment8001</module>
+  </modules>
   <packaging>pom</packaging>
 
-  <name>root</name>
+  <name>cloud2022</name>
   <!-- FIXME change it to the project's website -->
   <url>http://maven.apache.org/</url>
   <inceptionYear>2001</inceptionYear>
@@ -19,8 +22,8 @@
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <junit.version>4.12</junit.version>
-    <lombok.version>1.18.10</lombok.version>
-    <log4j.version>1.2.17</log4j.version>
+    <lombok.version>1.18.22</lombok.version>
+    <logback.version>1.2.11</logback.version>
     <mysql.version>8.0.25</mysql.version>
     <druid.version>1.2.6</druid.version>
     <mybatis.spring.boot.version>2.1.4</mybatis.spring.boot.version>
@@ -65,7 +68,7 @@
       <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>druid</artifactId>
-        <version>${druid.version}</version>
+        <version>1.2.9</version>
       </dependency>
       <dependency>
         <groupId>org.mybatis.spring.boot</groupId>
@@ -81,17 +84,17 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-core</artifactId>
-        <version>1.2.11</version>
+        <version>${logback.version}</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.11</version>
+        <version>${logback.version}</version>
       </dependency>
       <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
-        <version>1.18.22</version>
+        <version>${lombok.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
