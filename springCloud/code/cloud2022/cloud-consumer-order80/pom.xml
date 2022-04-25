@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>com.hanhan</groupId>
-            <artifactId>clould-api-commons</artifactId>
+            <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
