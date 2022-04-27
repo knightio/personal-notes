@@ -22,3 +22,6 @@ eureka:
   instance:
     instance-id: payment8001 # 主机名称
     prefer-ip-address: true # 访问路径显示ip地址
+    lease-renewal-interval-in-seconds: 1 # 客户端向eureka服务端发送心跳的时间间隔（单位：秒，默认：30）
+    lease-expiration-duration-in-seconds: 2 #eureka服务端收到最后一次心跳后等待时间上线，超时剔除服务（单位：秒，默认：90）
+

@@ -12,3 +12,5 @@ eureka:
     service-url:
 #      defaultZone: https://${eureka.instance.hostname}:${server.port}/eureka/
       defaultZone: https://eureka7002:7002/eureka/
+  server:
+    enable-self-preservation: false # 自我保护
