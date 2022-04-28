@@ -9,4 +9,4 @@ eureka:
     register-with-eureka: true
     service-url:
 #      defaultZone: http://localhost:7001/eureka #单机版
-      defaultZone: https://eureka7001:7001/eureka/,https://eureka7002:7002/eureka/
+      defaultZone: https://eureka7001.com:7001/eureka/,https://eureka7002.com:7002/eureka/

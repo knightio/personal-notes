@@ -20,7 +20,7 @@ public class PaymentController {
     @Resource
     private PaymentService paymentService;
 
-    @Value("${server.value}")
+    @Value("${server.port}")
     private String serverPort;
 
     @PostMapping(value = "/payment/create")

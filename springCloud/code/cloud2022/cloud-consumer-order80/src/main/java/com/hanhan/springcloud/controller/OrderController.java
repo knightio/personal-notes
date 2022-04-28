@@ -1,4 +1,4 @@
-package com.hanhan.controller;
+package com.hanhan.springcloud.controller;
 
 
 import com.hanhan.entities.CommonResult;

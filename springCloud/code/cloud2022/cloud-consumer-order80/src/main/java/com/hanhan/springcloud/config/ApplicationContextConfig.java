@@ -1,4 +1,4 @@
-package com.hanhan.config;
+package com.hanhan.springcloud.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
