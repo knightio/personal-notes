@@ -10,3 +10,7 @@ ribbon:
   ReadTimeout: 5000
   #建立连接后，服务器读取到可用资源的时间
   ConnectTimeout: 5000
+logging:
+  level:
+    # 以什么级别监控哪个接口
+    com.hanhan.springcloud.service.PaymentFeignService: debug
