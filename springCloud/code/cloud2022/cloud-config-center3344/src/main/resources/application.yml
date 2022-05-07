@@ -1,0 +1,30 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/knightio/springcloud-config.git
+          search-paths:
+            - springcloud-config
+          skip-ssl-validation: true
+        default-label: main
+      label: main
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+# rabbitMQ暴露bus刷新配置端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
