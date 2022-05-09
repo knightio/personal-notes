@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 public class OrderController {
 
 //    public static final String PAYMENT_URL = "http://localhost:8001";
-    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+    public static final String PAYMENT_URL = "http://cloud-payment-service";
 
     @Resource
     private RestTemplate restTemplate;
@@ -41,6 +41,12 @@ public class OrderController {
             return new CommonResult<>(444,"操作失败");
         }
 
+    }
+
+    @GetMapping("/consumer/payment/zipkin")
+    public String paymentZipkin(){
+        String result = restTemplate.getForObject(PAYMENT_URL+"/payment/zipkin",String.class);
+        return result;
     }
 
 }

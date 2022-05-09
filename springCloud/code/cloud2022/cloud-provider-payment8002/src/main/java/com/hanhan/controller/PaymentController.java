@@ -46,4 +46,10 @@ public class PaymentController {
             return new CommonResult<>(444,"没有记录，查询id:"+id,null);
         }
     }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin(){
+        return "hi,i am paymentZipkin server fallback!";
+    }
+
 }
