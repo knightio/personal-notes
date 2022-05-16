@@ -10,6 +10,6 @@ import java.math.BigDecimal;
 @FeignClient(value = "seata-account-service")
 public interface AccountService {
     @PostMapping("/account/decrease")
-    CommonResult decrease(@RequestParam("productId")Long productId, @RequestParam("money") BigDecimal money);
+    CommonResult decrease(@RequestParam("userId")Long userId, @RequestParam("money") BigDecimal money);
 
 }

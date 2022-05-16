@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Storage {
+public class Account {
     private Long id;
     private Long productId;
     private Integer total;
